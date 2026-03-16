@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dumpazzo</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="libs/html2canvas.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>nuovo dumpazzo</h2>
+        <br>
+        <div id="capture" class="dump">
+            <div class="column">
+                <div class="image-upload">
+                    <label for="file-input-1">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-1">
+                    </label>
+                    <input id="file-input-1" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-1', 'image-1')" />
+                </div>
+                <div class="image-upload">
+                    <label for="file-input-2">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-2">
+                    </label>
+                    <input id="file-input-2" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-2', 'image-2')" />
+                </div>
+                <div class="image-upload">
+                    <label for="file-input-3">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-3">
+                    </label>
+                    <input id="file-input-3" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-3', 'image-3')" />
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-upload">
+                    <label for="file-input-4">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-4">
+                    </label>
+                    <input id="file-input-4" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-4', 'image-4')" />
+                </div>
+                <div class="image-upload">
+                    <label for="file-input-5">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-5">
+                    </label>
+                    <input id="file-input-5" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-5', 'image-5')" />
+                </div>
+                <div class="image-upload">
+                    <label for="file-input-6">
+                        <img src="assets/icons/upload.svg" alt="" class="photo" id="image-6">
+                    </label>
+                    <input id="file-input-6" type="file" accept="image/jpeg, image/png, .jpeg, .jpg, .png"
+                        onchange="loadImage(event, 'file-input-6', 'image-6')" />
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="bnt-container">
+        <button class="button" id="btn">salva</button>
+    </div>
+    <script src="dump.js"></script>
+</body>
+</html>

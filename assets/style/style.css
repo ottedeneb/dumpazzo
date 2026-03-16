@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+
+
+:root{
+    --black: #101010;
+    --white: #F3F5F7;
+    --gray: #535353;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    display: block;
+}
+
+
+.dump{
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    
+}
+
+#capture{
+    border-radius: 10px;
+    border: var(--gray) solid 1px;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .photo{
+        width: 120px;
+        height: 140px;
+        object-fit: cover;
+    }
+  }
+
+.bnt-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pin-input{
+    text-align: center;
+    background-color: #1E1E1E;
+    caret-color: var(--gray);
+    color: var(--white);
+    outline: none;
+    border: none;
+    width: 45%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+
+.pin-input:focus{
+    outline: var(--gray) solid 1px;
+}
+
+.button{
+    width: 30%;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+
+
+.image-upload>input {
+    display: none;
+}
+
+.show-dump{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.show-photo{
+    width: 240px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: var(--gray) solid 1px;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.username{
+    width: fit-content;
+}
+
+.data{
+    color: var(--gray);
+}
